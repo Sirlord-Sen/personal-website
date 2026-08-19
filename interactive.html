@@ -6,7 +6,7 @@
     <meta name="google-site-verification" content="aVGcUENkuT9GNRBsaYYgX97u2yJn0JOtv21Wo2C3DgU" />
     <meta name="google-site-verification" content="Y1J4n8EuQ5FTTmBxzUvn85LHoQz0yti3IqhSPRJM5t4" />
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Interactive demonstrations of Sir-Lord Wiafe's research frameworks — Functional Inertia state-space simulator, Nonlinear Signal Alignment with WQA metrics, and the DyCoM operator framework.">
+    <meta name="description" content="Interactive demonstrations of Sir-Lord Wiafe's research frameworks: the Functional Inertia state-space simulator, Nonlinear Signal Alignment with WQA metrics, and the DyCoM operator framework.">
     <meta name="keywords" content="Sir-Lord Wiafe interactive, functional inertia demo, DyCoM demo, warp quantification analysis, signal alignment, dynamic systems visualization">
     <meta name="author" content="Sir-Lord Wiafe">
     <meta name="robots" content="index, follow">
@@ -15,14 +15,14 @@
     <!-- Open Graph (LinkedIn, Facebook previews) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Interactive Demos | Sir-Lord Wiafe">
-    <meta property="og:description" content="Interactive demonstrations of Sir-Lord Wiafe's research frameworks — Functional Inertia state-space simulator, Nonlinear Signal Alignment with WQA metrics, and the DyCoM operator framework.">
+    <meta property="og:description" content="Interactive demonstrations of Sir-Lord Wiafe's research frameworks: the Functional Inertia state-space simulator, Nonlinear Signal Alignment with WQA metrics, and the DyCoM operator framework.">
     <meta property="og:url" content="https://sirlordwiafe.com/interactive.html">
     <meta property="og:site_name" content="Sir-Lord Wiafe">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Interactive Demos | Sir-Lord Wiafe">
-    <meta name="twitter:description" content="Interactive demonstrations of Sir-Lord Wiafe's research frameworks — Functional Inertia state-space simulator, Nonlinear Signal Alignment with WQA metrics, and the DyCoM operator framework.">
+    <meta name="twitter:description" content="Interactive demonstrations of Sir-Lord Wiafe's research frameworks: the Functional Inertia state-space simulator, Nonlinear Signal Alignment with WQA metrics, and the DyCoM operator framework.">
     
 <title>Interactive Demos | Sir-Lord Wiafe</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -371,8 +371,7 @@ footer p{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3);lett
     <a class="nav-tab" href="about.html">About</a>
   </div>
   <div class="nav-right">
-    <span class="nav-cite">60+ Citations</span>
-    <span class="nav-badge">Open to Work</span>
+    <span class="nav-cite"><span class="gs-cites">95</span>+ Citations</span>
     <button class="hamburger" id="hamburger" aria-label="Menu" onclick="toggleMenu()">
       <span></span><span></span><span></span>
     </button>
@@ -390,7 +389,7 @@ footer p{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3);lett
 <div class="interactive-page">
     <div style="font-family:var(--mono);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Live Demos</div>
     <h1>Interactive<br><span style="color:var(--accent)">Demos</span></h1>
-    <p class="sub">Explore my core algorithms in action. Adjust parameters and see how the systems behave in real time. These are the actual mathematical operations behind my papers.</p>
+    <p class="sub">These demos run the actual math behind my papers. Adjust the parameters and watch how each system behaves in real time.</p>
 
     <div class="int-tabs">
       <button class="int-tab active" onclick="showIntTab('inertia',this)">Functional Inertia</button>
@@ -402,7 +401,7 @@ footer p{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3);lett
     <div class="int-panel" id="intpanel-dtw">
       <div class="dtw-interactive">
         <h3 style="font-family:var(--display);font-size:28px;letter-spacing:0.03em;margin-bottom:6px">Temporal Elasticity</h3>
-        <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.6">Two signals coupling at different temporal resolutions. The DTW alignment path reveals <strong>nonlinear stretching and shrinking</strong> between them. Warp Quantification Analysis (WQA) formalizes this into a suite of path-based metrics — each capturing a geometrically distinct dimension of how two signals relate across time. Alignment lines are cost-colored: <span style="color:#1a7c6b;font-weight:500">green</span> = well-aligned, <span style="color:#b8860b;font-weight:500">amber</span> = moderate warp, <span style="color:#c94a1a;font-weight:500">red</span> = high distortion.</p>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.6">Two signals coupling at different temporal resolutions. The DTW alignment path reveals <strong>nonlinear stretching and shrinking</strong> between them. Warp Quantification Analysis (WQA) turns this into a set of path-based metrics, each one capturing a different geometric aspect of how two signals relate across time. Alignment lines are colored by cost: <span style="color:#1a7c6b;font-weight:500">green</span> means well-aligned, <span style="color:#b8860b;font-weight:500">amber</span> means moderate warp, and <span style="color:#c94a1a;font-weight:500">red</span> means high distortion.</p>
         <div class="dtw-controls">
           <div class="ctrl"><label>Signal A Frequency</label><div style="display:flex;align-items:center;gap:10px"><input type="range" id="dtw-freqA" min="1" max="8" step="0.1" value="3"><span class="ctrl-val" id="dtw-freqA-val">3.0</span></div></div>
           <div class="ctrl"><label>Signal B Frequency</label><div style="display:flex;align-items:center;gap:10px"><input type="range" id="dtw-freqB" min="1" max="8" step="0.1" value="2"><span class="ctrl-val" id="dtw-freqB-val">2.0</span></div></div>
@@ -416,15 +415,15 @@ footer p{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3);lett
           <div><span style="color:var(--muted);font-size:10px;display:block;margin-bottom:3px">PATH LENGTH RATIO (PLR)</span><span id="wqa-plr" style="color:var(--gold);font-weight:500;font-size:15px">—</span><div style="font-size:10px;color:var(--muted);margin-top:3px">Actual path length vs diagonal baseline</div></div>
           <div><span style="color:var(--muted);font-size:10px;display:block;margin-bottom:3px">DIAGONAL CROSSING RATE (DCR)</span><span id="wqa-dcr" style="color:var(--blue);font-weight:500;font-size:15px">—</span><div style="font-size:10px;color:var(--muted);margin-top:3px">Frequency of path direction reversals</div></div>
         </div>
-        <p style="font-size:12px;color:var(--muted);margin-top:1rem;line-height:1.6"><strong>Published in:</strong> Imaging Neuroscience (MIT Press) 2024 — "Warp Elasticity" &nbsp;·&nbsp; ICASSP 2026 — "Warp Quantification Analysis: A Framework for Path-Based Signal Alignment Metrics"</p>
+        <p style="font-size:12px;color:var(--muted);margin-top:1rem;line-height:1.6"><strong>Published in:</strong> Imaging Neuroscience (MIT Press) 2024 · "Warp Elasticity" &nbsp;·&nbsp; ICASSP 2026 · "Warp Quantification Analysis: A Framework for Path-Based Signal Alignment Metrics"</p>
       </div>
     </div>
 
     <!-- INERTIA -->
     <div class="int-panel active" id="intpanel-inertia">
       <div class="inertia-int" style="background:var(--ink);padding:2rem;border-radius:2px">
-        <h3 style="font-family:var(--display);font-size:28px;letter-spacing:0.03em;margin-bottom:6px;color:#fff">Functional Inertia — Accumulating State System</h3>
-        <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:1.5rem;line-height:1.6">Watch a system that <strong style="color:#fff">accumulates its own history</strong>. The <span style="color:#c94a1a">red dot</span> is the raw input — an external force. The <span style="color:#4ecdc4">teal dot</span> is the latent state shaped by accumulated history. The <span style="color:#ffa94d">amber trail</span> is its memory. Select a regime to see how inertia governs the dynamics — or let them all play out. The <strong style="color:#1a7c6b">safe zone</strong> is where the system stabilizes; the <strong style="color:#c94a1a">danger zone</strong> is where it disperses. The FII trace shows sign: <strong style="color:#4ecdc4">≈0 = locked</strong>, <strong style="color:#b8860b">positive = stabilizing</strong>, <strong style="color:#c94a1a">negative = shifting</strong>.</p>
+        <h3 style="font-family:var(--display);font-size:28px;letter-spacing:0.03em;margin-bottom:6px;color:#fff">Functional Inertia: An Accumulating State System</h3>
+        <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:1.5rem;line-height:1.6">Watch a system that <strong style="color:#fff">accumulates its own history</strong>. The <span style="color:#c94a1a">red dot</span> is the raw input, an external force. The <span style="color:#4ecdc4">teal dot</span> is the latent state shaped by accumulated history. The <span style="color:#ffa94d">amber trail</span> is its memory. Select a regime to see how inertia governs the dynamics, or let them all play out. The <strong style="color:#1a7c6b">safe zone</strong> is where the system stabilizes; the <strong style="color:#c94a1a">danger zone</strong> is where it disperses. In the FII trace, <strong style="color:#4ecdc4">near zero means locked</strong>, <strong style="color:#b8860b">positive means stabilizing</strong>, and <strong style="color:#c94a1a">negative means shifting</strong>.</p>
         <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:1.5rem">
           <button id="fi-btn-locked"      onclick="setFiMode('locked')"      style="padding:10px 20px;font-size:12px;font-weight:500;letter-spacing:0.06em;border:2px solid #4ecdc4;background:transparent;color:#4ecdc4;cursor:pointer;transition:all 0.2s">◉ LOCKED</button>
           <button id="fi-btn-stabilizing" onclick="setFiMode('stabilizing')" style="padding:10px 20px;font-size:12px;font-weight:500;letter-spacing:0.06em;border:2px solid #b8860b;background:transparent;color:#b8860b;cursor:pointer;transition:all 0.2s">◎ STABILIZING</button>
@@ -450,15 +449,15 @@ footer p{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3);lett
             <div id="fi-interp-display" style="font-size:12px;color:rgba(255,255,255,0.6);line-height:1.4;margin-top:2px">—</div>
           </div>
         </div>
-        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:1rem;line-height:1.6"><strong style="color:rgba(255,255,255,0.5)">Published in:</strong> Preprint 2026 — "Functional Inertia Reveals History-Dependent Organization of Large-Scale Brain Dynamics"</p>
+        <p style="font-size:12px;color:rgba(255,255,255,0.3);margin-top:1rem;line-height:1.6"><strong style="color:rgba(255,255,255,0.5)">Published in:</strong> bioRxiv 2025 · "Functional Inertia Reveals History-Dependent Organization of Large-Scale Brain Dynamics"</p>
       </div>
     </div>
 
     <!-- DYCOM -->
     <div class="int-panel" id="intpanel-dycom">
       <div style="background:var(--surface);border:1px solid var(--border);padding:2rem">
-        <h3 style="font-family:var(--display);font-size:28px;letter-spacing:0.03em;margin-bottom:6px">DyCoM — Build Your Own Estimator</h3>
-        <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.6">Two live signals run below. For each of DyCoM's 4 operators, pick a configuration — then watch the <strong>output signal update in real time</strong> as the composition changes. Every classic connectivity method (SWPC, phase synchrony, FBC) is just a specific set of choices through these four operators.</p>
+        <h3 style="font-family:var(--display);font-size:28px;letter-spacing:0.03em;margin-bottom:6px">DyCoM: Build Your Own Estimator</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:1.5rem;line-height:1.6">Two live signals run below. Pick a configuration for each of DyCoM's four operators and watch the <strong>output signal update in real time</strong> as the composition changes. Every classic connectivity method (SWPC, phase synchrony, FBC) is just a specific set of choices through these four operators.</p>
 
         <canvas id="dycomSignalCanvas" height="120" style="width:100%;height:120px;display:block;background:#fafaf8;border:1px solid var(--border);margin-bottom:1.5rem"></canvas>
 
@@ -513,7 +512,7 @@ footer p{font-family:var(--mono);font-size:11px;color:rgba(255,255,255,0.3);lett
           <button style="font-size:11px;padding:7px 14px;background:transparent;border:1px solid var(--border);cursor:pointer;letter-spacing:0.05em" onclick="dycomSetPreset('issm')">ISSM preset</button>
         </div>
 
-        <p style="font-size:12px;color:var(--muted);line-height:1.6"><strong>Published in:</strong> bioRxiv 2026 — "Dynamic Co-Modulation (DyCoM): A Unified Operator Framework for Dynamic Connectivity in Neuroimaging"</p>
+        <p style="font-size:12px;color:var(--muted);line-height:1.6"><strong>Published in:</strong> bioRxiv 2026 · "Dynamic Co-Modulation (DyCoM): A Unified Operator Framework for Dynamic Connectivity in Neuroimaging"</p>
       </div>
     </div>
 
@@ -946,9 +945,9 @@ function initDyCoM() {
     'zscore-product-rect-variance':        'Adaptive Instantaneous Correlation (aIC)',
     'zscore-power-rect-variance':          'Standardized Adaptive Power (saIC)',
     'identity-power-rect-none':            'Filter-Bank Connectivity (FBC)',
-    'phase-synchrony-instant-none':        'Complex-Valued Phase Synchrony (CVPS) — cos(Δφ) & sin(Δφ)',
-    'phase-synchrony-rect-none':           'Windowed CVPS — smoothed cos(Δφ) & sin(Δφ)',
-    'phase-synchrony-cumulative-none':     'Cumulative CVPS — running cos(Δφ) & sin(Δφ)',
+    'phase-synchrony-instant-none':        'Complex-Valued Phase Synchrony (CVPS) · cos(Δφ) & sin(Δφ)',
+    'phase-synchrony-rect-none':           'Windowed CVPS · smoothed cos(Δφ) & sin(Δφ)',
+    'phase-synchrony-cumulative-none':     'Cumulative CVPS · running cos(Δφ) & sin(Δφ)',
   };
 
   function getSelections() {
@@ -1152,8 +1151,8 @@ function initDyCoM() {
       oCtx.stroke();
 
       oCtx.font='9px JetBrains Mono,monospace';
-      oCtx.fillStyle='#4ecdc4'; oCtx.fillText('cos(Δφ) — synchrony strength', 10, 12);
-      oCtx.fillStyle='#e8621f'; oCtx.fillText('sin(Δφ) — synchrony direction (sign = which leads)', 10, halfH+12);
+      oCtx.fillStyle='#4ecdc4'; oCtx.fillText('cos(Δφ) · synchrony strength', 10, 12);
+      oCtx.fillStyle='#e8621f'; oCtx.fillText('sin(Δφ) · synchrony direction (sign shows which leads)', 10, halfH+12);
 
       // Divider
       oCtx.strokeStyle='rgba(255,255,255,0.15)'; oCtx.lineWidth=0.8;
