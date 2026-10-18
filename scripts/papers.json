@@ -42,7 +42,7 @@
     "year": 2026,
     "url": "https://doi.org/10.1162/netn.a.505",
     "meta": "PUBLISHED · NETWORK NEUROSCIENCE",
-    "citations": 8,
+    "citations": 9,
     "abstract": "Novel framework quantifying dynamic convergence and divergence across overlapping brain states in four psychiatric disorders simultaneously. Demonstrates shared and disorder-specific dynamic signatures. Published in Network Neuroscience, 10(1):93–117.",
     "tags": [
       [
@@ -76,7 +76,7 @@
     "year": 2026,
     "url": "https://www.biorxiv.org/content/10.64898/2026.01.22.701132v3",
     "meta": "OPERATOR THEORY · BIORXIV",
-    "citations": 3,
+    "citations": 4,
     "abstract": "Introduces <strong>DyCoM</strong> — a compact operator-level framework expressing dynamic connectivity estimators as compositions of four fundamental signal processing operations. Domain-agnostic by design: applies to any multivariate time series. Resolves previously conflicting neurobiological signatures through principled operator decomposition.",
     "tags": [
       [
@@ -106,7 +106,7 @@
     "year": 2026,
     "url": "https://doi.org/10.1109/ISBI61048.2026.11515768",
     "meta": "GRAPH NETWORKS · IEEE ISBI 2026",
-    "citations": 3,
+    "citations": 4,
     "abstract": "Kuramoto oscillator-informed graph neural network uncovering structure-function coupling in children with prenatal drug exposure. Links dynamic network topology to neurodevelopmental trajectories using physics-inspired graph learning.",
     "tags": [
       [
@@ -293,7 +293,7 @@
     "year": 2026,
     "url": "https://doi.org/10.1109/ICASSP55912.2026.11460782",
     "meta": "KOOPMAN DYNAMICS · IEEE ICASSP 2026",
-    "citations": 0,
+    "citations": 1,
     "abstract": "Koopman operator dynamics with Riemannian manifold alignment for predicting early substance use initiation from longitudinal connectome data. Bridges behavior-conditioned latent dynamics with brain connectivity trajectories using geometric deep learning.",
     "tags": [
       [
@@ -812,7 +812,7 @@
     "year": 2024,
     "url": "https://doi.org/10.1162/imag_a_00187",
     "meta": "TEMPORAL DYNAMICS · IMAGING NEUROSCIENCE · MIT PRESS",
-    "citations": 22,
+    "citations": 23,
     "abstract": "Proposes <strong>Warp Elasticity</strong> — a novel metric using DTW alignment to capture temporal coupling timescales between network pairs. Captures nonlinear stretching and shrinking across brain regions. High replicability, noise robustness, and significant clinical discriminability across independent datasets.",
     "tags": [
       [
@@ -897,5 +897,62 @@
       "IEEE EMBC 2023",
       "w/ Fu, Calhoun, Faghiri"
     ]
+  },
+  {
+    "title": "BrainKODE: Controlled Koopman Dynamics over Longitudinal Structure–Function Coupling for Early Prediction of Adolescent Substance Use",
+    "year": 2026,
+    "url": null,
+    "meta": "NEW",
+    "citations": 0,
+    "abstract": "",
+    "tags": [
+      [
+        "New",
+        false
+      ]
+    ],
+    "venue": [
+      "International Conference on Medical Image Computing and Computer-Assisted …, 2026",
+      "2026"
+    ],
+    "auto": true
+  },
+  {
+    "title": "Spatio-dynamical decomposition: Joint spatial and dynamical criteria for FMRI Blind source separation.",
+    "year": 2026,
+    "url": null,
+    "meta": "NEW",
+    "citations": 0,
+    "abstract": "",
+    "tags": [
+      [
+        "New",
+        false
+      ]
+    ],
+    "venue": [
+      "bioRxiv, 2026.09. 25.754426, 2026",
+      "2026"
+    ],
+    "auto": true
+  },
+  {
+    "title": "TE-aware state analysis and evolution in dynamic network connectivity",
+    "year": 2026,
+    "url": null,
+    "meta": "NEW",
+    "citations": 0,
+    "abstract": "",
+    "tags": [
+      [
+        "New",
+        false
+      ]
+    ],
+    "venue": [
+      "bioRxiv, 2026.09. 20.753026, 2026",
+      "2026"
+    ],
+    "auto": true
   }
 ]
