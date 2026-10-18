@@ -50,7 +50,7 @@ def fetch_with_urllib():
 
 def current_value(marker):
     text = (ROOT / "index.html").read_text()
-    m = re.search(rf'class="{marker}">(\d+)<', text)
+    m = re.search(rf'class="{marker}"[^>]*>(\d+)<', text)
     return int(m.group(1)) if m else None
 
 
@@ -83,11 +83,14 @@ def main():
         if not path.exists():
             continue
         text = path.read_text()
-        text = re.sub(r'(class="gs-cites">)\d+(<)', rf'\g<1>{stats["cites"]}\g<2>', text)
-        text = re.sub(r'(class="gs-pubs">)\d+(<)', rf'\g<1>{stats["pubs"]}\g<2>', text)
-        text = re.sub(r'(class="gs-hindex">)\d+(<)', rf'\g<1>{stats["hindex"]}\g<2>', text)
+        text = re.sub(r'(class="gs-cites"[^>]*>)\d+(<)', rf'\g<1>{stats["cites"]}\g<2>', text)
+        text = re.sub(r'(class="gs-pubs"[^>]*>)\d+(<)', rf'\g<1>{stats["pubs"]}\g<2>', text)
+        text = re.sub(r'(class="gs-hindex"[^>]*>)\d+(<)', rf'\g<1>{stats["hindex"]}\g<2>', text)
         text = re.sub(r'\d+ publications, \d+\+ citations',
                       f'{stats["pubs"]} publications, {stats["cites"]}+ citations', text)
+        text = re.sub(r'\d+ peer-reviewed papers', f'{stats["pubs"]} peer-reviewed papers', text)
+        text = re.sub(r'\d+\+ citations, h-index \d+',
+                      f'{stats["cites"]}+ citations, h-index {stats["hindex"]}', text)
         path.write_text(text)
     print("done")
     return 0
