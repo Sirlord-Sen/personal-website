@@ -954,5 +954,24 @@
       "2026"
     ],
     "auto": true
+  },
+  {
+    "title": "A Chronnectogram-ICA Framework for Tracking Continuously Evolving and Overlapping Functional Brain States",
+    "year": 2026,
+    "url": null,
+    "meta": "NEW",
+    "citations": 0,
+    "abstract": "",
+    "tags": [
+      [
+        "New",
+        false
+      ]
+    ],
+    "venue": [
+      "bioRxiv, 2026.10. 14.759150, 2026",
+      "2026"
+    ],
+    "auto": true
   }
 ]
