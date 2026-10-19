@@ -113,6 +113,9 @@ def render_item(p):
     tags = "".join(
         f'<span class="ptag{" highlight" if hl else ""}">{t}</span>'
         for t, hl in p.get("tags", []))
+    if p.get("press"):
+        tags += (f'<a class="ptag highlight" href="{p["press"]["url"]}" target="_blank" '
+                 f'rel="noopener" style="text-decoration:none">{p["press"]["label"]} ↗</a>')
     venue = "<br>".join(line for line in p.get("venue", []) if line)
     return f"""
     <div class="paper-item reveal">
